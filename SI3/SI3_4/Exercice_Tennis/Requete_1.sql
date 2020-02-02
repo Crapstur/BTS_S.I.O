@@ -1,0 +1,1 @@
+Alter TABLE INSCRIPTIONS ADD DateInscription DATE default date();
