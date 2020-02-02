@@ -1,0 +1,5 @@
+SELECT facture.NUMEFACT, facturer.QTEFURER
+FROM facture, facturer
+WHERE REFEPROD = "10003"
+AND facture.NUMEFACT = facturer.NUMEFACT
+ORDER BY NUMEFACT;

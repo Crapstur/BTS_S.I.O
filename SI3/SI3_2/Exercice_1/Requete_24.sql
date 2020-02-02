@@ -1,0 +1,3 @@
+SELECT REFEPROD, AVG (QTEFURER) as Moyenne_Facturée
+FROM facturer
+GROUP BY REFEPROD;

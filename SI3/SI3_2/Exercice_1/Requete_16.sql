@@ -1,0 +1,3 @@
+SELECT NUMEFACT, DATEFACT, NOMECLIE
+FROM facture, client
+WHERE facture.NUMECLIE = client.NUMECLIE;

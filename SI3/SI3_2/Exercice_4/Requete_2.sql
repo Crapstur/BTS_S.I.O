@@ -1,0 +1,5 @@
+SELECT COUNT(*) As NbrPlaceOccup
+FROM OCCUPER
+WHERE OCCUPER.NumVol = "AF3006"
+AND OCCUPER.DateOccup = "2013/01/19"
+AND OCCUPER.Occupation = 1;

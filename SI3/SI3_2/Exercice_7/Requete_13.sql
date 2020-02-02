@@ -1,0 +1,4 @@
+SELECT CLI_NOM, CLI_PRENOM
+FROM t_client, t_email
+WHERE t_client.CLI_ID = t_email.CLI_ID
+AND EML_ADRESSE IS NULL;

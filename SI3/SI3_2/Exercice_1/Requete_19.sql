@@ -1,0 +1,5 @@
+SELECT NUMECLIE, NOMECLIE
+FROM client, representant
+WHERE client.NUMEREPR = representant.NUMEREPR
+AND NOMEREPR = 'Dupont'
+ORDER BY NOMECLIE;

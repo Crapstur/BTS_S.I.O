@@ -1,0 +1,2 @@
+SELECT SUM(CHB_COUCHAGE) As Total_Couchages
+FROM T_CHAMBRE ;

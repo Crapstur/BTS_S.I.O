@@ -1,0 +1,4 @@
+SELECT Immat, VilBas
+FROM AVION, [TYPE-AVION]
+WHERE AVION.CodeType = [TYPE-AVION].CodeType
+AND CapaType > 250 ;

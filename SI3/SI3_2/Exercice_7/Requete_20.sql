@@ -1,0 +1,7 @@
+SELECT AVG(Nbr_Reserv) AS Nbr_Jour_Moyen
+FROM (SELECT CHB_ID, COUNT(CHB_PLN_CLI_RESERVE) AS Nbr_Reserv
+      FROM tj_chb_pln_cli
+      WHERE CHB_PLN_CLI_RESERVE = 1
+      AND PLN_JOUR BETWEEN "2013-08-01" AND "2013-08-30"
+      GROUP BY CHB_ID)
+      Reserv

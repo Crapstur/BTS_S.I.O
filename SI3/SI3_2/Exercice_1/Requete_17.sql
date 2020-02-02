@@ -1,0 +1,3 @@
+SELECT DATEFACT, NUMECLIE, REFEPROD
+FROM facture, facturer
+WHERE facture.NUMEFACT = facturer.NUMEFACT;

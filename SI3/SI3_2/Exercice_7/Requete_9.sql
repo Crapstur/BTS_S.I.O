@@ -1,0 +1,3 @@
+SELECT COUNT(CHB_ID) As Nombre_Chambre_Sans_Bain
+FROM T_CHAMBRE
+WHERE CHB_BAIN Is NOT Null ;

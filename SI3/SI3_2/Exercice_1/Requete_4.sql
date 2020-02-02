@@ -1,0 +1,3 @@
+SELECT *
+FROM produit
+WHERE QTESPROD <= 10;
