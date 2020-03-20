@@ -29,7 +29,7 @@
     End Sub
 
 
-    ' Lancement de l'exercice 6 '
+    ' Lancement de l exercice 6 '
     Private Sub Exercice_6_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         NbrCulturelle = 0
         NbrManuelle = 0

@@ -17,7 +17,7 @@
         ' Efface les listeBox.
         Clear()
 
-        ' Rempli les listesBox
+        ' Rempli les listesBox '
         For i = 0 To (Nom.Length - 1)
             ListBoxNom.Items.Add(Nom(i))
             ListBoxPrenom.Items.Add(Prenom(i))
@@ -66,7 +66,7 @@
 
     ' Boutton Effacer '
     Private Sub ButtonEffacer_Click(sender As Object, e As EventArgs) Handles ButtonEffacer.Click
-        ' Efface les listeBox.
+        ' Efface les listeBox. '
         Clear()
     End Sub
 
