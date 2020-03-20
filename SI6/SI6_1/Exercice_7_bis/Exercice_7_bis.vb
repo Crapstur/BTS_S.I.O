@@ -14,7 +14,7 @@
 
     ' Fonction Calculer '
     Public Sub Calculer()
-        ' Efface les listeBox.
+        ' Efface les listeBox. '
         Clear()
 
         ' Rempli les listesBox '
