@@ -12,7 +12,7 @@
 
     ' Fonction Clear '
     Public Sub Clear()
-        ' Efface les listeBox.
+        ' Efface les listeBox. '
         ListBoxNom.Items.Clear()
         ListBoxPrenom.Items.Clear()
         ListBoxNbHMois.Items.Clear()
