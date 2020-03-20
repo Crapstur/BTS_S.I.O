@@ -50,7 +50,7 @@ Public Class Exercice_8
 
     End Sub
 
-    ' Lancement de l'exercice '
+    ' Lancement de l exercice '
     Private Sub Exercice_8_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Connexion = New MySqlConnection("server=localhost; userid=root; database=gestioncommerciale")
         Try
