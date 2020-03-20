@@ -2,13 +2,13 @@
     Dim Academie As String
 
 
-    ' Boutton Fermer
+    ' Boutton Fermer '
     Private Sub ButtonFermer_Click(sender As Object, e As EventArgs) Handles ButtonFermer.Click
         Me.Close()
         Exercice_0.Show()
     End Sub
 
-    ' Liste Académies
+    ' Liste Académies '
     Private Sub ComboBoxAcad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxAcad.SelectedIndexChanged
         Academie = ComboBoxAcad.Text
 
@@ -29,7 +29,4 @@
 
     End Sub
 
-    Private Sub Exercice_3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

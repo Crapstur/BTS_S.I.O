@@ -2,16 +2,16 @@
     Dim Anc, Prime, Prime_Totale, Prime_2 As Double
     Dim Sexe, Couple As Boolean
 
-    ' Boutton Effacer
+    ' Boutton Effacer '
     Private Sub ButtonEffacer_Click(sender As Object, e As EventArgs) Handles ButtonEffacer.Click
-        ' Effacer les TextBox
+        ' Effacer les TextBox '
         For Each Control As Control In Me.Controls
             If TypeOf Control Is TextBox Then
                 Control.Text = String.Empty
             End If
         Next
 
-        ' Effacer les RadioButton
+        ' Effacer les RadioButton '
         RadioButtonSHomme.Checked = False
         RadioButtonSFemme.Checked = False
         RadioButtonConjOui.Checked = False
@@ -20,7 +20,12 @@
 
     End Sub
 
-    ' Boutton Calculer
+    Private Sub Exercice_4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+
+    ' Boutton Calculer '
     Private Sub ButtonCalculer_Click(sender As Object, e As EventArgs) Handles ButtonCalculer.Click
 
         Anc = CDbl(TextBoxAnc.Text)
@@ -47,17 +52,17 @@
 
     End Sub
 
-    ' Boutton Femme
+    ' Boutton Femme '
     Private Sub RadioButtonSFemme_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonSFemme.CheckedChanged
         Sexe = False
     End Sub
 
-    ' Boutton Homme
+    ' Boutton Homme '
     Private Sub RadioButtonSHomme_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonSHomme.CheckedChanged
         Sexe = True
     End Sub
 
-    ' Boutton Fermer
+    ' Boutton Fermer '
     Private Sub ButtonFermer_Click(sender As Object, e As EventArgs) Handles ButtonFermer.Click
         Me.Close()
     End Sub

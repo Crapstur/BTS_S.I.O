@@ -7,12 +7,12 @@
     End Sub
 
 
-    ' Boutton Fermer
+    ' Boutton Fermer '
     Private Sub ButtonFermer_Click(sender As Object, e As EventArgs) Handles ButtonFermer.Click
         Me.Close()
     End Sub
 
-    ' Boutton effacer
+    ' Boutton effacer '
     Private Sub ButtonEffacer_Click(sender As Object, e As EventArgs) Handles ButtonEffacer.Click
 
         For each Control As Control In Me.Controls
@@ -23,7 +23,7 @@
 
     End Sub
 
-    ' Boutton calculer
+    ' Boutton calculer '
     Private Sub ButtonCalculer_Click(sender As Object, e As EventArgs) Handles ButtonCalculer.Click
 
         MtBrut = Val(TextBoxMtBrut.Text)

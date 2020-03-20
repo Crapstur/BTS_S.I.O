@@ -42,6 +42,7 @@ Partial Class Exercice_5
         Me.LabelPrimeAnc = New System.Windows.Forms.Label()
         Me.ComboBoxCARepr = New System.Windows.Forms.ComboBox()
         Me.ComboBoxAnc = New System.Windows.Forms.ComboBox()
+        Me.ButtonEffacer = New System.Windows.Forms.Button()
         Me.GroupBoxRemu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -156,9 +157,9 @@ Partial Class Exercice_5
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(79, 152)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(135, 17)
+        Me.Label3.Size = New System.Drawing.Size(143, 17)
         Me.Label3.TabIndex = 20
-        Me.Label3.Text = "Rémunération Brut :"
+        Me.Label3.Text = "Rémunération Brute :"
         '
         'TextBoxCaPrime
         '
@@ -245,11 +246,22 @@ Partial Class Exercice_5
         Me.ComboBoxAnc.Size = New System.Drawing.Size(282, 21)
         Me.ComboBoxAnc.TabIndex = 26
         '
+        'ButtonEffacer
+        '
+        Me.ButtonEffacer.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ButtonEffacer.Location = New System.Drawing.Point(642, 158)
+        Me.ButtonEffacer.Name = "ButtonEffacer"
+        Me.ButtonEffacer.Size = New System.Drawing.Size(97, 30)
+        Me.ButtonEffacer.TabIndex = 25
+        Me.ButtonEffacer.Text = "Effacer"
+        Me.ButtonEffacer.UseVisualStyleBackColor = False
+        '
         'Exercice_5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButtonEffacer)
         Me.Controls.Add(Me.ComboBoxAnc)
         Me.Controls.Add(Me.ComboBoxCARepr)
         Me.Controls.Add(Me.GroupBoxRemu)
@@ -291,4 +303,5 @@ Partial Class Exercice_5
     Friend WithEvents ComboBoxAnc As ComboBox
     Friend WithEvents LabelPrimeAnc As Label
     Friend WithEvents TextBoxPrimeAnc As TextBox
+    Friend WithEvents ButtonEffacer As Button
 End Class

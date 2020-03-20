@@ -1,14 +1,32 @@
 ﻿Public Class Exercice_5
+    Dim PrimeAnc, PrimeCA, RemBrut As Double
 
-
+    ' Boutton Fermer '
     Private Sub ButtonFermer_Click(sender As Object, e As EventArgs) Handles ButtonFermer.Click
+        For Each Control As Control In Me.Controls
+            If TypeOf Control Is TextBox Then
+                Control.Text = String.Empty
+            End If
+        Next
+
+        TextBoxFixe.Text = String.Empty
+        TextBoxPrimeAnc.Text = String.Empty
+        TextBoxCaPrime.Text = String.Empty
+        TextBoxRemBrut.Text = String.Empty
+        ComboBoxAnc.SelectedIndex = -1
+        ComboBoxCARepr.SelectedIndex = -1
+        PrimeAnc = 0
+        PrimeCA = 0
+        RemBrut = 0
+
+        GroupBoxRemu.Visible = False
         Me.Close()
     End Sub
 
+    ' Boutton Calculer '
     Private Sub ButtonCalculer_Click(sender As Object, e As EventArgs) Handles ButtonCalculer.Click
-
-        Dim PrimeAnc, PrimeCA, RemBrut As Double
         Const Fixe = 2000
+
 
         If (ComboBoxCARepr.SelectedIndex > -1) And (ComboBoxAnc.SelectedIndex > -1) Then
 
@@ -30,6 +48,7 @@
                     PrimeCA = 1500
             End Select
         End If
+
         RemBrut = PrimeCA + PrimeAnc + Fixe
 
         TextBoxNom.Text = TextBoxNom.Text
@@ -43,4 +62,24 @@
         TextBoxNomAff.Text = TextBoxNom.Text
     End Sub
 
+    ' Boutton Effacer '
+    Private Sub ButtonEffacer_Click(sender As Object, e As EventArgs) Handles ButtonEffacer.Click
+        For Each Control As Control In Me.Controls
+            If TypeOf Control Is TextBox Then
+                Control.Text = String.Empty
+            End If
+        Next
+
+        TextBoxFixe.Text = String.Empty
+        TextBoxPrimeAnc.Text = String.Empty
+        TextBoxCaPrime.Text = String.Empty
+        TextBoxRemBrut.Text = String.Empty
+        ComboBoxAnc.SelectedIndex = -1
+        ComboBoxCARepr.SelectedIndex = -1
+        PrimeAnc = 0
+        PrimeCA = 0
+        RemBrut = 0
+
+        GroupBoxRemu.Visible = False
+    End Sub
 End Class
